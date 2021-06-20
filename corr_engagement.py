@@ -48,6 +48,10 @@ plt.hist(residuals_communication_cleaned, color = 'red')
 plt.show()
 
 # calculate Pearson's correlation
+plt.scatter(communication, engagement, color ='blue')
+plt.show()
+plt.scatter(communication_cleaned, engagement_cleaned, color ='red')
+plt.show()
 corr, _ = pearsonr(engagement, communication)
 print('Pearsons correlation: %.3f' % corr)
 corr2, _ = pearsonr(engagement_cleaned, communication_cleaned)
